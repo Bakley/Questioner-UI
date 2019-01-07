@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <a href="dashboard.html" class="header-logo">Questioner</a>
+        <nav>
+            <ul>
+                <li><a> Home</a></li>
+                <li class="dropdown">
+                    <button class="dropdownbtn">
+                        <a>User</a>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">User Profile</a>
+                      <a href="#">Logout</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="maincontainer">
+            <div class="createmeetup">
+                <div class="meetup-box">
+
+                    <h1>Create Meet-up</h1>
+
+                    <input type="text" name="Title" placeholder="Title i.e (Mary's Birthday)" />
+                    <input type="text" name="Date" placeholder="Date i.e (29/11/2019)" />
+                    <input type="text" name="Venue" placeholder="Venue i.e (Nairobi Garage)" />
+
+                    <a href="dashboard.html">
+                        <input type="submit" value="Create">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="viewmeetup">
+                <table class="table">
+                  <tr>
+                    <th>Meet-up Id</th>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Venue</th>
+
+                    <th class="empty"></th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>some data</td>
+                    <td>other data</td>
+                    <td>ye?</td>
+                    <td class="edit-buttons"><button class="edit btn">View</button><button class="delete btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>moar data</td>
+                    <td>oh</td>
+                    <td>bleep</td>
+                    <td class="edit-buttons"><button class="edit btn">View</button><button class="delete btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>evn mor dataz</td>
+                    <td>yup!</td>
+                    <td>boop</td>
+                     <td class="edit-buttons"><button class="edit btn">View</button><button class="delete btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>final data</td>
+                    <td>yeah!</td>
+                    <td>brap</td>
+                    <td class="edit-buttons"><button class="edit btn">View</button><button class="delete btn">Delete</button></td>
+                  </tr>
+                </table>
+
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+</html>
