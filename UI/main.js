@@ -24,3 +24,12 @@ document.getElementById('admin').addEventListener('click', () => {
 document.querySelector('.closeadmin').addEventListener('click', () => {
   document.querySelector('.adminlogin-box').style.display = 'none';
 });
+
+// delete modular
+document.getElementById('delete').addEventListener('click', () => {
+  document.querySelector('.bg-modal-delete').style.display = 'flex';
+});
+
+document.querySelector('.closeadmin').addEventListener('click', () => {
+  document.querySelector('.adminlogin-box').style.display = 'none';
+});
