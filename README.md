@@ -2,6 +2,8 @@
 Crowd-source questions for a meet up.
 Questioner helps the meet up organizer prioritize questions to be answered. Other users can vote on asked questions and they bubble to the top or bottom of the log.
 
+[![BCH compliance](https://bettercodehub.com/edge/badge/Bakley/Questioner-UI?branch=gh-pages)](https://bettercodehub.com/)
+
 # Required Features
 1. Admin can create meet ups.
 2. Users can create an account and log in.
