@@ -161,6 +161,11 @@ main .meetup-title{
     margin-top: 30px;
 }
 
+main .meetup-comments {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
 main .question-box {
     margin-top: 25px;
     width: 100%;
@@ -186,28 +191,12 @@ main .question-box {
     box-sizing: border-box;
 }
 
-.question-action > i:first-child {
-    margin-right: 5px;
+#meetup-comment {
+    display: flex;
+
 }
-.fa, .fas {
-    font-weight: 900;
-}
-.fa, .far, .fas {
-    font-family: "Font Awesome 5 Free";
-}
-.fa, .fab, .fal, .far, .fas {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-}
-user agent stylesheet
-i, cite, em, var, address, dfn {
-    font-style: italic;
-}
+
+
 
 p {
     display: block;
