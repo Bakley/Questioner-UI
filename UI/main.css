@@ -325,6 +325,19 @@ button.delete.btn { background: #F69; }
     padding: 20px;
 }
 
+.delete-box{
+    position: relative;
+    margin: 8% auto 5% auto;
+    width: 250px;
+    height: 300px;
+    background: #FFF;
+    border-radius: 25px;
+    padding:20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 20px;
+}
+
 .bg-modal {
     width: 100%;
     height: 100%;
@@ -346,6 +359,16 @@ button.delete.btn { background: #F69; }
 }
 
 .bg-modal-register{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-modal-delete {
     width: 100%;
     height: 100%;
     position: absolute;
