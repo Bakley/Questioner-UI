@@ -16,7 +16,7 @@
                 <button id="signin"><a href=""></a>Sign in</button>
                 <button id="admin"><a href=""></a>Admin</button>
             </ul>
-        </nav>
+        </nav>  
 
     </header>
     <main>
@@ -90,16 +90,18 @@
         <!-- user login modular -->
         <div class="bg-modal">
             <div class="login-box">
-            <div class="close">+</div>
+            <a href="landing.html">
+                <div class="close">+</div>
+            </a>
 
             <h1>Login</h1>
 
-            <input type="text" name="email" placeholder="Email" />
-            <input type="password" name="password" placeholder="Password" />
+            <input id="email" type="text" name="email" placeholder="Email" />
+            <input id="password" type="password" name="password" placeholder="Password" />
 
-            <a href="user_dashboard.html">
-                <input type="submit" value="Login">
-            </a>
+            <!-- <a href="user_dashboard.html"> -->
+<input id="loginresults" type="submit" value="Login">
+            <!-- </a> -->
 
             </div>
         </div>
@@ -108,16 +110,19 @@
         <!-- Admin login modular -->
         <div class="bg-modal-admin">
             <div class="adminlogin-box">
-                <div class="closeadmin">+</div>
+                <a href="landing.html">
+                    <div class="closeadmin">+</div>
+                </a>
+
 
                 <h1>Admin Login</h1>
 
-                <input type="text" name="email" placeholder="Email" />
-                <input type="password" name="password" placeholder="Password" />
+                <input id="email" type="text" name="email" placeholder="Email" />
+                <input id="password" type="password" name="password" placeholder="Password" />
 
-                <a href="dashboard.html">
-                    <input type="submit" value="Login">
-                </a>
+                <!-- <a href="dashboard.html"> -->
+                    <input id="adminloginresults" type="submit" value="Login">
+                <!-- </a> -->
 
             </div>
         </div>
@@ -125,20 +130,33 @@
         <!-- Sign up modular -->
         <div class="bg-modal-register">
             <div class="signup-box">
-            <div class="closeup">+</div>
+            
+            <a href="landing.html">
+                <div class="closeup">+</div>
+            </a>
 
                 <h2>Questioner <br> Sign up</h2>
 
-                <input type="text" name="username" placeholder="Username" />
-                <input type="text" name="email" placeholder="E-mail" />
-                <input type="password" name="password" placeholder="Password" />
-                <input type="password" name="password2" placeholder="Retype password" />
-                <a href="user_login.html">
-                    <input type="submit" name="signup_submit" value="Sign me up"  />
-                </a>
+                <input id="email" type="text" name="email" placeholder="Email" />
+                <input id="password" type="password" name="password" placeholder="Password" />
+
+                <input id="username" type="text" name="username" placeholder="Username" />
+                <input id="othername" type="text" name="othername" placeholder="Other Name" />
+
+                <input id="firstname" type="text" name="firstname" placeholder="First Name" />
+                <input id="lastname" type="text" name="lastname" placeholder="Last Name" />
+
+
+                <input id="phoneNumber" type="text" name="phoneNumber" placeholder="Phone Number" />
+
+                <!-- <a href="user_login.html"> -->
+                    <input id="registeresults" type="submit" name="signup_submit" value="Sign me up"  />
+                <!-- </a> -->
 
             </div>
         </div>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="static/register.js"></script>
+
 </body>
 </html>

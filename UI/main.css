@@ -277,7 +277,7 @@ button.delete.btn { background: #F69; }
     position: relative;
     margin: 8% auto 5% auto;
     width: 250px;
-    height: 400px;
+    height: auto;
     background: #FFF;
     border-radius: 25px;
     padding:20px;
