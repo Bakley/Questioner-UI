@@ -112,6 +112,14 @@ header nav ul li .dropdown-content {
     z-index: 1;
 }
 
+.auth-button {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(5, 64, 10);
+    padding: 15px 20px;
+    text-decoration: none;
+}
 
 /* ####################################### */
             /* Main style */
