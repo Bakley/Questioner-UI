@@ -3,6 +3,16 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+venv
+*__pycache__
+.pytest_cache
+app/
+.vscode
+.env
+node_modules/
+npm-debug.log
+coverage/
+
 # C extensions
 *.so
 

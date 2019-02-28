@@ -1,24 +1,28 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
-<body>
-    <header>
-        <a href="landing.html" class="header-logo">Questioner</a>
-        <nav>
-            <ul>
-                <button id="signup"><a href=""></a>Sign up</button>
-                <button id="signin"><a href=""></a>Sign in</button>
-                <button id="admin"><a href=""></a>Admin</button>
-            </ul>
-        </nav>
 
-    </header>
+<body>
+    <div id="header">
+        <header class="main-header">
+            <a href="landing.html" class="header-logo">Questioner</a>
+            <nav>
+                <ul>
+                    <button class="auth-button" id="signup"><a href=""></a>Sign up</button>
+                    <button class="auth-button" id="signin"><a href=""></a>Sign in</button>
+                    <button class="auth-button" id="admin"><a href=""></a>Admin</button>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
     <main>
         <div class="all-meetup">
             <div class="meetup">
@@ -31,7 +35,7 @@
                     <div class="details">
                         <p class="details-title">Mary Birtday</p>
 
-                         <span class="details-date">Fri 13th Jan, 7:00PM</span>
+                        <span class="details-date">Fri 13th Jan, 7:00PM</span>
 
                         <span class="details-venue">iHub, Nairobi, Kenya</span>
                     </div>
@@ -47,7 +51,7 @@
                     <div class="details">
                         <p class="details-title">Mary Birtday</p>
 
-                         <span class="details-date">Fri 13th Jan, 7:00PM</span>
+                        <span class="details-date">Fri 13th Jan, 7:00PM</span>
 
                         <span class="details-venue">iHub, Nairobi, Kenya</span>
                     </div>
@@ -63,7 +67,7 @@
                     <div class="details">
                         <p class="details-title">Mary Birthday</p>
 
-                         <span class="details-date">Fri 13th Jan, 7:00PM</span>
+                        <span class="details-date">Fri 13th Jan, 7:00PM</span>
 
                         <span class="details-venue">iHub, Nairobi, Kenya</span>
                     </div>
@@ -79,7 +83,7 @@
                     <div class="details">
                         <p class="details-title">Mary Birtday</p>
 
-                         <span class="details-date">Fri 13th Jan, 7:00PM</span>
+                        <span class="details-date">Fri 13th Jan, 7:00PM</span>
 
                         <span class="details-venue">iHub, Nairobi, Kenya</span>
                     </div>
@@ -87,58 +91,79 @@
             </div>
         </div>
     </main>
-        <!-- user login modular -->
-        <div class="bg-modal">
-            <div class="login-box">
-            <div class="close">+</div>
+    <!-- user login modular -->
+    <div class="bg-modal">
+        <div class="login-box">
+            <a href="landing.html">
+                <div class="close">+</div>
+            </a>
 
             <h1>Login</h1>
 
-            <input type="text" name="email" placeholder="Email" />
-            <input type="password" name="password" placeholder="Password" />
+            <input id="email" type="text" name="email" placeholder="Email" />
+            <input id="password" type="password" name="password" placeholder="Password" />
 
-            <a href="user_dashboard.html">
-                <input type="submit" value="Login">
+            <!-- <a href="user_dashboard.html"> -->
+            <input id="loginresults" type="submit" value="Login">
+            <!-- </a> -->
+
+        </div>
+    </div>
+
+
+    <!-- Admin login modular -->
+    <div class="bg-modal-admin">
+        <div class="adminlogin-box">
+            <a href="landing.html">
+                <div class="closeadmin">+</div>
             </a>
 
-            </div>
+
+            <h1>Admin Login</h1>
+
+            <input id="email" type="text" name="email" placeholder="Email" />
+            <input id="password" type="password" name="password" placeholder="Password" />
+
+            <!-- <a href="dashboard.html"> -->
+            <input id="adminloginresults" type="submit" value="Login">
+            <!-- </a> -->
+
         </div>
+    </div>
+
+    <!-- Sign up modular -->
+    <div class="bg-modal-register">
+        <div class="signup-box">
+
+            <a href="landing.html">
+                <div class="closeup">+</div>
+            </a>
+
+            <h2>Questioner <br> Sign up</h2>
+
+            <input id="email" type="text" name="email" placeholder="Email" />
+            <input id="password" type="password" name="password" placeholder="Password" />
+
+            <input id="username" type="text" name="username" placeholder="Username" />
+            <input id="othername" type="text" name="othername" placeholder="Other Name" />
+
+            <input id="firstname" type="text" name="firstname" placeholder="First Name" />
+            <input id="lastname" type="text" name="lastname" placeholder="Last Name" />
 
 
-        <!-- Admin login modular -->
-        <div class="bg-modal-admin">
-            <div class="adminlogin-box">
-                <div class="closeadmin">+</div>
+            <input id="phoneNumber" type="text" name="phoneNumber" placeholder="Phone Number" />
 
-                <h1>Admin Login</h1>
+            <!-- <a href="user_login.html"> -->
+            <input id="registeresults" type="submit" name="signup_submit" value="Sign me up" />
+            <!-- </a> -->
 
-                <input type="text" name="email" placeholder="Email" />
-                <input type="password" name="password" placeholder="Password" />
-
-                <a href="dashboard.html">
-                    <input type="submit" value="Login">
-                </a>
-
-            </div>
         </div>
+    </div>
+    <script type="text/javascript" src="static/main.js"></script>
+    <script type="text/javascript" src="static/login.js"></script>
+    <script type="text/javascript" src="static/admin.js"></script>
+    <script type="text/javascript" src="static/register.js"></script>
 
-        <!-- Sign up modular -->
-        <div class="bg-modal-register">
-            <div class="signup-box">
-            <div class="closeup">+</div>
-
-                <h2>Questioner <br> Sign up</h2>
-
-                <input type="text" name="username" placeholder="Username" />
-                <input type="text" name="email" placeholder="E-mail" />
-                <input type="password" name="password" placeholder="Password" />
-                <input type="password" name="password2" placeholder="Retype password" />
-                <a href="user_login.html">
-                    <input type="submit" name="signup_submit" value="Sign me up"  />
-                </a>
-
-            </div>
-        </div>
-    <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
